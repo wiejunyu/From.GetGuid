@@ -22,5 +22,11 @@ namespace Forms.GetGuid
             Guid ID = Guid.NewGuid();
             Clipboard.SetDataObject(ID.ToString());
         }
+
+        private void btn_Get1_Click(object sender, EventArgs e)
+        {
+            Guid ID = Guid.NewGuid();
+            Clipboard.SetDataObject(ID.ToString().Replace("-",""));
+        }
     }
 }
